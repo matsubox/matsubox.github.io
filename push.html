@@ -44,75 +44,56 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
-      <div class="overlay"></div>
+    <header class="masthead">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>Clean Blog</h1>
+            <div class="post-heading">
+              <h1>How to push local repository</h1>
+              <span class="meta">Posted on July 1, 2018</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-            <a href="push.html">
-              <h2 class="post-title">
-                How to push local repository
-              </h2>
-            </a>
-            <p class="post-meta">Posted
-              on July 1, 2018</p>
-          </div>
-          <hr>
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              <p>I would like to introduce how to push local repository. When you implemented some functions, you push them to remote repository. (<b>We push on Wednesday.</b>) </p>
 
-          <div class="post-preview">
-            <a href="eclipse.html">
-              <h2 class="post-title">
-                Convenient Eclipse Tips1
-              </h2>
-              <h3 class="post-subtitle">
-                Shortcut key
-              </h3>
-            </a>
-            <p class="post-meta">Posted
-              on June 25, 2018</p>
-          </div>
-          <hr>
+              <ol>
+                <li>Checkout the develop branch</li>
+                If you are in the master branch, checkout the develop branch. If you have not created the develop branch yet, create it and checkout.
+                <p>How to create branch<img src="img/create-branch.PNG" width="560px"></p>
+                
+                <li>Add the files</li>
+                Add the files which you want to push to prepare the content staged for the next commit. After you added, if you want to cancel the staged files, you can cancel. These operation is easy. Just <b>drag-and-drop</b>.
+                <img src="img/add.png"><br><br>
+                
+                <li>Commit your changes</li>
+                Commit save your changes to the local repository. you save the staged files by add operation. <br>
+                You commit with message about your change.
+                <img src="img/commit.PNG" width="800"><br><br>
 
-          <div class="post-preview">
-            <a href="pull.html">
-              <h2 class="post-title">
-                How to update local repository
-              </h2>
-            </a>
-            <p class="post-meta">Posted
-              on June 18, 2018</p>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="rules.html">
-              <h2 class="post-title">
-                Our development rules
-              </h2>
-            </a>
-            <p class="post-meta">Posted
-              on June 14, 2018</p>
-          </div>
-          <hr>
-          <!-- Pager -->
-          <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                <h5>How to cancel the commit</h5>
+                If you want to cancel the commit you can do it.
+                First, click the "Log / History". Then hover the cursor on the before your commit and right click. Finally, choose the "Restet current branch to this commit".
+                <img src="img/reset-commit.png" width="800">
+                <p>After reset<img src="img/reset-commit2.png"></p>                
+
+                <li>Push the develop branch</li>
+                After commit, you push it.<br>
+                Check your develop branch and push. 
+                <img src="img/push.PNG">
+              </ol>
+
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
     <hr>
 
